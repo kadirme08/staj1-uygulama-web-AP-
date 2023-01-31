@@ -23,6 +23,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
+
+
+
 });
 
 
@@ -30,9 +33,9 @@ Route::post('/auth/register',[AuthController::class,'createUser']);
 Route::post('/auth/login',[AuthController::class,'loginUser']);
 
 Route::get('/home', [TestController::class,'show'])->middleware('auth:sanctum');
-Route::post('/home/post',[TestController::class,'Post']);
-Route::put('/home/update/{id}',[TestController::class,'update']);
-Route::delete('/home/delete/{id}',[TestController::class,'delete']);
+Route::post('/home/create',[TestController::class,'Post'])->middleware('auth:sanctum');
+Route::put('/home/update/{id}',[TestController::class,'update'])->middleware('auth:sanctum');;
+Route::delete('/home/delete/{id}',[TestController::class,'delete'])->middleware('auth:sanctum');;
 
 
 
