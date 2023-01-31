@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class apitest extends Model
+class TestModel extends Model
 {
     use HasFactory;
-    protected $table='apitest';
-    protected $guarded=[];
+    protected $table="test";
+    protected $guarded;
 }

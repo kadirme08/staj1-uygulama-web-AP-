@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
 
 
         $this->call([
-           apitest::class
+           testSeeder::class
         ]);
          // \App\Models\User::factory(10)->create();
 

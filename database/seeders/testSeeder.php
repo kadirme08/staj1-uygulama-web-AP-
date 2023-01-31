@@ -5,8 +5,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\Console\Helper\Table;
 
-class apitest extends Seeder
+class testSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,8 +16,7 @@ class apitest extends Seeder
      */
     public function run()
     {
-        DB::table('api-test')->insert([
-
+        DB::table('test')->insert([
             [
 
                 'isim' => 'deneme1',
@@ -57,7 +57,6 @@ class apitest extends Seeder
                 'telefon'=>'123456789'
 
             ],
-
 
 
 

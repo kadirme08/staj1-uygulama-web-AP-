@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('api-test', function (Blueprint $table) {
+        Schema::create('test', function (Blueprint $table) {
             $table->id();
             $table->string('isim')->nullable();
             $table->string('soyisim')->nullable();
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('api-test');
+        Schema::dropIfExists('test');
     }
 };
